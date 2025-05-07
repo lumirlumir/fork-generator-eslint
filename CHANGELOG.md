@@ -1,5 +1,49 @@
 # Changelog
 
+## [4.1.3](https://github.com/lumirlumir/fork-generator-eslint/compare/v5.1.2...v4.1.3) (2025-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* Require Node.js ^18.18.0 || ^20.9.0 || >=21.1.0 ([#169](https://github.com/lumirlumir/fork-generator-eslint/issues/169))
+* drop Node 12/17 support ([#135](https://github.com/lumirlumir/fork-generator-eslint/issues/135))
+
+### chore
+
+* Run a test release using release-please ([#145](https://github.com/lumirlumir/fork-generator-eslint/issues/145)) ([6d3e535](https://github.com/lumirlumir/fork-generator-eslint/commit/6d3e5353c341aeb4f0b9fae6c7701d4a4a556848))
+* test releasing with release-please ([#149](https://github.com/lumirlumir/fork-generator-eslint/issues/149)) ([239193a](https://github.com/lumirlumir/fork-generator-eslint/commit/239193a2aff6ca7bac345ce50abdade89e6e6878))
+
+
+### Features
+
+* add `"files"` to generated `package.json` ([#190](https://github.com/lumirlumir/fork-generator-eslint/issues/190)) ([cf7d755](https://github.com/lumirlumir/fork-generator-eslint/commit/cf7d7550cdf2ad968c4bcefecb2987125603672a))
+* add auto-generated configs list to readme in template ([#164](https://github.com/lumirlumir/fork-generator-eslint/issues/164)) ([93a5ffb](https://github.com/lumirlumir/fork-generator-eslint/commit/93a5ffb940d1be433cf0fd467e5c57d1d32b672f))
+* add eslint-doc-generator to plugin template ([#140](https://github.com/lumirlumir/fork-generator-eslint/issues/140)) ([6878784](https://github.com/lumirlumir/fork-generator-eslint/commit/68787841f22bacd6cb243fed7ca8fafb5fe4843b))
+* add messages to rule template ([#182](https://github.com/lumirlumir/fork-generator-eslint/issues/182)) ([f1c1240](https://github.com/lumirlumir/fork-generator-eslint/commit/f1c12406d7f5ccb387c2210d0729413624f3784c))
+* drop ESLint v6 support in plugin template ([#136](https://github.com/lumirlumir/fork-generator-eslint/issues/136)) ([0a0f60c](https://github.com/lumirlumir/fork-generator-eslint/commit/0a0f60cf4da05e0f8b0ad92a9ad3b79828634439))
+* drop Node 12/17 support ([#135](https://github.com/lumirlumir/fork-generator-eslint/issues/135)) ([9675983](https://github.com/lumirlumir/fork-generator-eslint/commit/96759838f70e37a217a4a4116e99e03b469d4a23))
+* Require Node.js ^18.18.0 || ^20.9.0 || &gt;=21.1.0 ([#169](https://github.com/lumirlumir/fork-generator-eslint/issues/169)) ([6d3a572](https://github.com/lumirlumir/fork-generator-eslint/commit/6d3a572babe3690c62264290316daa09c679157a))
+* strictly define Node API in plugin template ([#134](https://github.com/lumirlumir/fork-generator-eslint/issues/134)) ([b6a3591](https://github.com/lumirlumir/fork-generator-eslint/commit/b6a3591148f076dde927393a45c53943f89f2d57))
+* update templates for eslint v9 ([#179](https://github.com/lumirlumir/fork-generator-eslint/issues/179)) ([c383e9c](https://github.com/lumirlumir/fork-generator-eslint/commit/c383e9c1e8d132198c333a8cdf79ef8904f6fceb))
+* upgrade plugin template dependencies ([#133](https://github.com/lumirlumir/fork-generator-eslint/issues/133)) ([c7de75d](https://github.com/lumirlumir/fork-generator-eslint/commit/c7de75dabe32aa5baf86f9f21e7e409204641dca))
+* use `messageId` in tests ([#189](https://github.com/lumirlumir/fork-generator-eslint/issues/189)) ([c53fbc6](https://github.com/lumirlumir/fork-generator-eslint/commit/c53fbc65307126a00e6955bf403d3d37d1e2c138))
+
+
+### Bug Fixes
+
+* add mocha as a dependency (fixes [#32](https://github.com/lumirlumir/fork-generator-eslint/issues/32)) ([2a37eb5](https://github.com/lumirlumir/fork-generator-eslint/commit/2a37eb5d36644d3d9855c696120fdae73b272192))
+* Change checkbox to commit for plugin generator (fixes [#9](https://github.com/lumirlumir/fork-generator-eslint/issues/9)) ([e456765](https://github.com/lumirlumir/fork-generator-eslint/commit/e456765e0d9e1fa8564aae9c608dc598dd9b33da))
+* Complete path for correct plugin install (fixes [#19](https://github.com/lumirlumir/fork-generator-eslint/issues/19)) ([855fd77](https://github.com/lumirlumir/fork-generator-eslint/commit/855fd77f952ca8f05564875a577323fb56fb08a1))
+* convert README template usage to flat ([#194](https://github.com/lumirlumir/fork-generator-eslint/issues/194)) ([779340a](https://github.com/lumirlumir/fork-generator-eslint/commit/779340a5f10db368cfefe67dda7dda1043c50dac))
+* Double quotes correctly escaped in JS/JSON files (fixes [#42](https://github.com/lumirlumir/fork-generator-eslint/issues/42)) ([#45](https://github.com/lumirlumir/fork-generator-eslint/issues/45)) ([0b540e2](https://github.com/lumirlumir/fork-generator-eslint/commit/0b540e28481b8e3c4839aceff434f0c6779fad21))
+* fix rule id and plugin id validator (fixes [#11](https://github.com/lumirlumir/fork-generator-eslint/issues/11)) ([fcd3582](https://github.com/lumirlumir/fork-generator-eslint/commit/fcd3582e1867a4231d8d8987a76763d6cd02ba47))
+* npm test script on plugin generator (fixes [#25](https://github.com/lumirlumir/fork-generator-eslint/issues/25)) ([90a2425](https://github.com/lumirlumir/fork-generator-eslint/commit/90a242577e61f212d52c24d3163dca61273bc834))
+* Remove .only from tests ([861326b](https://github.com/lumirlumir/fork-generator-eslint/commit/861326b89729506966dd1778796361573e92ef2e))
+* remove unused meta.docs.category field in rule template ([#132](https://github.com/lumirlumir/fork-generator-eslint/issues/132)) ([edda907](https://github.com/lumirlumir/fork-generator-eslint/commit/edda907053284f3d8c4c9a08fc2537af70858741))
+* Update eslint dep in generated package.json (fixes [#14](https://github.com/lumirlumir/fork-generator-eslint/issues/14)) ([a6a4096](https://github.com/lumirlumir/fork-generator-eslint/commit/a6a40960805d4c035968c0ebf591fb4b1d4c303f))
+* update to mocha v11 ([#198](https://github.com/lumirlumir/fork-generator-eslint/issues/198)) ([adbae0e](https://github.com/lumirlumir/fork-generator-eslint/commit/adbae0e19db701a105fe06e8f9ee90e79396d642))
+* Use caret range for `requireindex` in template ([#82](https://github.com/lumirlumir/fork-generator-eslint/issues/82)) ([6d3e1e2](https://github.com/lumirlumir/fork-generator-eslint/commit/6d3e1e2f8fcfb9624ac8c9b3575a6c0dda6aa8f2))
+
 ## [5.1.2](https://github.com/eslint/generator-eslint/compare/v5.1.1...v5.1.2) (2024-12-24)
 
 
